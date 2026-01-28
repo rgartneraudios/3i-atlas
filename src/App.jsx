@@ -194,9 +194,19 @@ function App() {
   return (
     <div style={styles.container}>
       
-      <video src="/space.mp4" autoPlay loop muted playsInline style={styles.videoBackground}/>
+      <video 
+  src={`${import.meta.env.BASE_URL}space.mp4`} 
+  autoPlay loop muted playsInline 
+  style={styles.videoBackground}
+/>
 
-      {!gameOver && <img src="/atlas.png" alt="Player" style={styles.player}/>}
+     {!gameOver && (
+  <img 
+    src={`${import.meta.env.BASE_URL}atlas.png`} 
+    alt="Player" 
+    style={styles.player}
+  />
+)}
 
       {enemies.map(e => <div key={e.id} style={styles.enemy(e.x, e.y)} />)}
 
