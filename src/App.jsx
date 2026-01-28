@@ -133,12 +133,12 @@ function App() {
     container: {
   position: 'relative', width: '100vw', height: '100vh',
   backgroundColor: 'black', overflow: 'hidden', cursor: 'none',
-  filter: 'contrast(1.0) brightness(0.9)' // <--- Añade esto para negros más puros
+  filter: 'contrast(1.0) brightness(0.8)' // <--- Añade esto para negros más puros
 },
     videoBackground: {
   position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
   objectFit: 'cover', zIndex: 0, 
-  opacity: 0.4 // <--- Bajado de 0.6 a 0.3 (Mucho más oscuro)
+  opacity: 0.6 // <--- Bajado de 0.6 a 0.3 (Mucho más oscuro)
 },
     // NUEVA CAPA DE NEBULOSA ROTATORIA
    nebulaLayer: {
